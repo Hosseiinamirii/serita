@@ -112,26 +112,82 @@
     </div>
 
     <script>
-        let sectionsData = [
-            {
-                title: "1.1 زیرساخت و عملیات",
-                category: "infrastructure",
-                questions: [
-                    { text: "زیرساخت فعلی سریتا (تجهیزات، فضا) چه ظرفیت‌هایی برای افزایش حجم بیماران دارد؟", priority: "high", note: "" },
-                    { text: "فرآیندهای عملیاتی (مثل نوبت‌دهی، درمان) چگونه می‌توانند برای حجم بالاتر بهینه شوند؟", priority: "high", note: "" },
-                    { text: "چه گلوگاه‌هایی در عملیات روزانه مانع افزایش ظرفیت خدمات هستند؟", priority: "high", note: "" }
-                ]
-            },
-            {
-                title: "1.2 بازاریابی",
-                category: "marketing",
-                questions: [
-                    { text: "استراتژی بازاریابی فعلی سریتا چگونه بیماران جدید را در بازار محلی جذب می‌کند؟", priority: "high", note: "" },
-                    { text: "چه کانال‌های بازاریابی (دیجیتال یا آفلاین) بیشترین تأثیر را در جذب بیماران داشته‌اند؟", priority: "high", note: "" },
-                    { text: "چگونه بازخورد بیماران فعلی برای بهبود استراتژی‌های بازاریابی استفاده می‌شود؟", priority: "high", note: "" }
-                ]
-            }
-        ];
+    let sectionsData = [
+  {
+    title: "استراتژی های کلان سریتا",
+    category: "strategy",
+    questions: [
+      { text: "مأموریت اصلی سریتا چیست", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "سریتا می‌خواد تو ذهن مشتریانش به چه برندی شناخته بشه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "ارزش‌های بنیادین سریتا چگونه می‌توانند به‌صورت یکپارچه در تمامی استراتژی‌ها و تعاملات سازمانی منعکس شوند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چشم‌انداز سریتا برای یک بازه زمانی 5 تا 10 ساله چیست و چه شاخص‌های کلیدی عملکردی برای تحقق آن تعریف شده؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه ویژگی‌های متمایزکننده‌ای می‌توانند سریتا را از رقبا جدا کنند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "سریتا چگونه هویت بصری و پیام‌رسانی برند خود را با اهداف راهبردی کلان هم‌راستا و یکپارچه می کند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه شرکا استراتژیکی می‌توانند به‌عنوان اهرم‌های رشد برند سریتا عمل کنند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "سریتا مسئولیت اجتماعی شرکتی را به‌عنوان بخشی از استراتژی کلان خود ادغام کرده است؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه سیستم‌های نظارت و ارزیابی عملکرد برای پایش موفقیت استراتژی‌های کلان برند لازم است؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" }
+    ]
+  },
+  {
+    title: "بازاریابی دیجیتال در سریتا",
+    category: "digital_marketing",
+    questions: [
+      { text: "استراتژی بازاریابی آنلاین سریتا برای جذب مراجعین چیست و چه کانال‌هایی بیشترین تأثیر را دارند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چطور محتوا و کمپین‌های دیجیتال برای افزایش آگاهی از برند و جذب لید طراحی و اجرا می‌شن؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "رویکرد سریتا برای تعامل با مراجعین تو شبکه‌های اجتماعی و پاسخگویی به بازخوردها چیه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "استراتژی تولید محتوای و SEO وب‌سایت با چه رویکردی تعیین و بهینه‌سازی می شود؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "لیدهای دیجیتال از کدام کانال‌ جمع‌آوری و پیگیری می شوند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "تبلیغات آنلاین چطور بهینه‌سازی می‌شن تا نرخ بازگشت سرمایه (ROI) و جذب لیدها بیشتر بشه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه برنامه‌ای برای گسترش حضور دیجیتال و رقابت با دیگر کلینیک‌های دارین؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "موفقیت بازاریابی دیجیتال با چه kpi سنجیده می‌شه و چه اهدافی برای بهبودش دارین؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه استراتژی هایی رو برای افزایش تعامل و نرخ تبدیل تو شبکه‌های اجتماعی دنبال می‌کنید؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" }
+    ]
+  },
+  {
+    title: "بازاریابی آفلاین در سریتا",
+    category: "offline_marketing",
+    questions: [
+      { text: "استراتژی بازاریابی آفلاین سریتا برای جذب بیماران چیه و چه فعالیت‌هایی بیشترین تأثیر رو دارن؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چطور رویدادها یا فعالیت‌های محلی به تقویت برند و جذب بیمار کمک کرده اند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه برنامه‌های وفاداری یا ارجاعی برای افزایش بازگشت مشتریان اجرا می‌شه و عملکرداش چجوری اندازه‌گیری میشه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "اثربخشی فعالیت‌های آفلاین چطور سنجیده می‌شه و چه فرصت‌هایی برای بهبودش هست؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "از رسانه‌های سنتی (مثل تلویزیون، رادیو) و تبلیغات محیطی برای آگاهی از برند استفاده شده؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "آیا برنامه‌ای برای گسترش فعالیت‌های آفلاین تو بازارهای جدید دارین؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "بازاریابی آفلاین و آنلاین چطور هماهنگ می‌شن تا تجربه بیمار یکپارچه بشه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه رویکردی برای جذب مراجعین از طریق نمایشگاه‌ها یا کنفرانس‌های پزشکی دارین؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چطور بازخورد بیماران از فعالیت‌های آفلاین جمع‌آوری و تحلیل می‌شه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" }
+    ]
+  },
+  {
+    title: "تیم بازاریابی سریتا",
+    category: "marketing_team",
+    questions: [
+      { text: "ساختار و تخصص‌های تیم بازاریابی چیه و چطور از اهداف استراتژیک سریتا پشتیبانی می‌کنه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "از چه فرآیندها و ابزارهایی برای مدیریت کمپین‌ها، هماهنگی تیم و گزارش‌دهی استفاده می‌شه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه برنامه‌ای برای توسعه مهارت‌ها یا تقویت تیم در راستای رشد سریتا دارین", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "تیم بازاریابی چطور با بخش‌های دیگه (مثل پزشکی، پشتیبانی) برای تجربه یکپارچه همکاری می‌کنه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "کدام بخش از فعالیت‌های بازاریابی برون‌سپاری شده‌اند؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" }
+    ]
+  },
+  {
+    title: "هویت برند سریتا",
+    category: "brand_identity",
+    questions: [
+      { text: "هویت و پیشنهاد ارزش سریتا چیه و چطور تو بازار از رقبا متمایز می‌شه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "هویت برند چطور تو همه نقاط تماس با بیمار یکپارچه و برای بازارهای خارجی بومی‌سازی می‌شه؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه برنامه‌ای برای تقویت جایگاه برند و رقابت با کلینیک‌های بین‌المللی وجوددارد؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "آیا برنامه‌ای برای بازطراحی یا تقویت هویت برند در راستای اهداف کلان وجود داره؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" },
+      { text: "چه اهدافی برای افزایش آگاهی از برند تو بازارهای جدید دنبال می‌کنین؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" }
+    ]
+  },
+  {
+    title: "ارتباط با برند سریتا",
+    category: "brand_communication",
+    questions: [
+      { text: "در ارتباط با مشتریان چقدر روی داستان سرایی و شخصی سازی برای تقویت جایگاه برند فعالیت‌شده؟", priority: "high", note: "", shortAnswer: "", keyPoints: "", action: "" }
+    ]
+  }
+];
 
         let currentNoteIndex = null;
         let currentPreviewRow = null;
